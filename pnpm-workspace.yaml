@@ -1,0 +1,5 @@
+packages:
+  - 'gill'
+  - 'kite'
+  - 'solana-web3js'
+  - 'solana-web3js-legacy'

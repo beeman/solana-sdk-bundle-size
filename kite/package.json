@@ -14,6 +14,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@helius-dev/kite": "^1.0.1",
     "@mantine/code-highlight": "^7.16.3",
     "@mantine/core": "^7.16.3",
     "@mantine/form": "^7.16.3",

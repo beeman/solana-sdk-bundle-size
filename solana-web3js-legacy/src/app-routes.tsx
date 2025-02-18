@@ -1,8 +1,9 @@
-import { Navigate, RouteObject, useRoutes } from 'react-router'
+import { RouteObject, useRoutes } from 'react-router'
 import { UiLayout } from './ui/'
 import { LazyFeatureAbout, LazyFeatureContact, LazyFeatureDev, LazyFeatureHome } from './features'
 import { LucideBug, LucideFile, LucideHome } from 'lucide-react'
 import { UiNotFound } from './ui'
+import { GetGenesisHash } from './get-genesis-hash.tsx'
 
 export function AppRoutes() {
   const routes: RouteObject[] = [
@@ -41,7 +42,7 @@ export function AppRoutes() {
         />
       ),
       children: [
-        { index: true, element: <Navigate to="/home" replace /> },
+        { index: true, element: <GetGenesisHash endpoint="https://api.devnet.solana.com" /> },
         { path: '/about', element: <LazyFeatureAbout /> },
         { path: '/contact', element: <LazyFeatureContact /> },
         { path: '/dev/*', element: <LazyFeatureDev /> },

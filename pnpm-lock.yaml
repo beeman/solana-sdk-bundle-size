@@ -95,12 +95,15 @@ importers:
       vite:
         specifier: ^6.1.0
         version: 6.1.0(@types/node@22.13.4)(sugarss@4.0.1(postcss@8.5.2))
+      vite-bundle-analyzer:
+        specifier: ^0.17.0
+        version: 0.17.0
 
   kite:
     dependencies:
       '@helius-dev/kite':
         specifier: ^1.0.1
-        version: 1.0.1(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.7.3)(ws@8.18.0(bufferutil@4.0.9)(utf-8-validate@5.0.10))
+        version: 1.0.1(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.7.3)
       '@mantine/code-highlight':
         specifier: ^7.16.3
         version: 7.17.0(@mantine/core@7.17.0(@mantine/hooks@7.17.0(react@19.0.0))(@types/react@19.0.10)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(@mantine/hooks@7.17.0(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -271,6 +274,9 @@ importers:
       vite:
         specifier: ^6.1.0
         version: 6.1.0(@types/node@22.13.4)(sugarss@4.0.1(postcss@8.5.2))
+      vite-bundle-analyzer:
+        specifier: ^0.17.0
+        version: 0.17.0
 
   solana-web3js-legacy:
     dependencies:
@@ -2085,6 +2091,10 @@ packages:
     resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
     hasBin: true
 
+  vite-bundle-analyzer@0.17.0:
+    resolution: {integrity: sha512-pSQng2NuhPo13hdSFcjW/Kjq8hmdfzCkJhWvAP5g98WbqZvy1k3Z+cpDxD9oxdNqOHHQFnEAIHR/MY6El1NnHA==}
+    hasBin: true
+
   vite@6.1.0:
     resolution: {integrity: sha512-RjjMipCKVoR4hVfPY6GQTgveinjNuyLw+qruksLDvA5ktI1150VmcMBKmQaEWJhg/j6Uaf6dNCNA0AfdzUb/hQ==}
     engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
@@ -2438,13 +2448,13 @@ snapshots:
 
   '@floating-ui/utils@0.2.9': {}
 
-  '@helius-dev/kite@1.0.1(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.7.3)(ws@8.18.0(bufferutil@4.0.9)(utf-8-validate@5.0.10))':
+  '@helius-dev/kite@1.0.1(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.7.3)':
     dependencies:
-      '@solana-program/compute-budget': 0.6.1(@solana/web3.js@2.0.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.7.3)(ws@8.18.0(bufferutil@4.0.9)(utf-8-validate@5.0.10)))
-      '@solana-program/memo': 0.6.1(@solana/web3.js@2.0.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.7.3)(ws@8.18.0(bufferutil@4.0.9)(utf-8-validate@5.0.10)))
-      '@solana-program/system': 0.6.2(@solana/web3.js@2.0.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.7.3)(ws@8.18.0(bufferutil@4.0.9)(utf-8-validate@5.0.10)))
-      '@solana-program/token': 0.4.1(@solana/web3.js@2.0.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.7.3)(ws@8.18.0(bufferutil@4.0.9)(utf-8-validate@5.0.10)))
-      '@solana-program/token-2022': 0.3.4(@solana/web3.js@2.0.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.7.3)(ws@8.18.0(bufferutil@4.0.9)(utf-8-validate@5.0.10)))
+      '@solana-program/compute-budget': 0.6.1(@solana/web3.js@2.0.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.7.3))
+      '@solana-program/memo': 0.6.1(@solana/web3.js@2.0.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.7.3))
+      '@solana-program/system': 0.6.2(@solana/web3.js@2.0.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.7.3))
+      '@solana-program/token': 0.4.1(@solana/web3.js@2.0.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.7.3))
+      '@solana-program/token-2022': 0.3.4(@solana/web3.js@2.0.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.7.3))
       '@solana/assertions': 2.0.1-canary-20241115100609(typescript@5.7.3)
       '@solana/errors': 2.0.1-canary-20241115100609(typescript@5.7.3)
       '@solana/transaction-confirmation': 2.0.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.7.3)(ws@8.18.0(bufferutil@4.0.9)(utf-8-validate@5.0.10))
@@ -2618,23 +2628,23 @@ snapshots:
     dependencies:
       '@solana/web3.js': 2.0.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.7.3)(ws@8.18.0(bufferutil@4.0.9)(utf-8-validate@5.0.10))
 
-  '@solana-program/compute-budget@0.6.1(@solana/web3.js@2.0.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.7.3)(ws@8.18.0(bufferutil@4.0.9)(utf-8-validate@5.0.10)))':
+  '@solana-program/compute-budget@0.6.1(@solana/web3.js@2.0.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.7.3))':
     dependencies:
       '@solana/web3.js': 2.0.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.7.3)(ws@8.18.0(bufferutil@4.0.9)(utf-8-validate@5.0.10))
 
-  '@solana-program/memo@0.6.1(@solana/web3.js@2.0.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.7.3)(ws@8.18.0(bufferutil@4.0.9)(utf-8-validate@5.0.10)))':
+  '@solana-program/memo@0.6.1(@solana/web3.js@2.0.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.7.3))':
     dependencies:
       '@solana/web3.js': 2.0.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.7.3)(ws@8.18.0(bufferutil@4.0.9)(utf-8-validate@5.0.10))
 
-  '@solana-program/system@0.6.2(@solana/web3.js@2.0.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.7.3)(ws@8.18.0(bufferutil@4.0.9)(utf-8-validate@5.0.10)))':
+  '@solana-program/system@0.6.2(@solana/web3.js@2.0.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.7.3))':
     dependencies:
       '@solana/web3.js': 2.0.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.7.3)(ws@8.18.0(bufferutil@4.0.9)(utf-8-validate@5.0.10))
 
-  '@solana-program/token-2022@0.3.4(@solana/web3.js@2.0.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.7.3)(ws@8.18.0(bufferutil@4.0.9)(utf-8-validate@5.0.10)))':
+  '@solana-program/token-2022@0.3.4(@solana/web3.js@2.0.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.7.3))':
     dependencies:
       '@solana/web3.js': 2.0.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.7.3)(ws@8.18.0(bufferutil@4.0.9)(utf-8-validate@5.0.10))
 
-  '@solana-program/token@0.4.1(@solana/web3.js@2.0.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.7.3)(ws@8.18.0(bufferutil@4.0.9)(utf-8-validate@5.0.10)))':
+  '@solana-program/token@0.4.1(@solana/web3.js@2.0.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.7.3))':
     dependencies:
       '@solana/web3.js': 2.0.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.7.3)(ws@8.18.0(bufferutil@4.0.9)(utf-8-validate@5.0.10))
 
@@ -3491,10 +3501,10 @@ snapshots:
   gill@0.3.0(@solana/web3.js@2.0.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.7.3)(ws@8.18.0(bufferutil@4.0.9)(utf-8-validate@5.0.10)))(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.7.3)(ws@8.18.0(bufferutil@4.0.9)(utf-8-validate@5.0.10)):
     dependencies:
       '@solana-program/address-lookup-table': 0.6.1(@solana/web3.js@2.0.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.7.3)(ws@8.18.0(bufferutil@4.0.9)(utf-8-validate@5.0.10)))
-      '@solana-program/compute-budget': 0.6.1(@solana/web3.js@2.0.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.7.3)(ws@8.18.0(bufferutil@4.0.9)(utf-8-validate@5.0.10)))
-      '@solana-program/memo': 0.6.1(@solana/web3.js@2.0.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.7.3)(ws@8.18.0(bufferutil@4.0.9)(utf-8-validate@5.0.10)))
-      '@solana-program/system': 0.6.2(@solana/web3.js@2.0.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.7.3)(ws@8.18.0(bufferutil@4.0.9)(utf-8-validate@5.0.10)))
-      '@solana-program/token-2022': 0.3.4(@solana/web3.js@2.0.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.7.3)(ws@8.18.0(bufferutil@4.0.9)(utf-8-validate@5.0.10)))
+      '@solana-program/compute-budget': 0.6.1(@solana/web3.js@2.0.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.7.3))
+      '@solana-program/memo': 0.6.1(@solana/web3.js@2.0.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.7.3))
+      '@solana-program/system': 0.6.2(@solana/web3.js@2.0.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.7.3))
+      '@solana-program/token-2022': 0.3.4(@solana/web3.js@2.0.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.7.3))
       '@solana/accounts': 2.0.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.7.3)
       '@solana/addresses': 2.0.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.7.3)
       '@solana/codecs': 2.0.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.7.3)
@@ -3996,6 +4006,8 @@ snapshots:
   util-deprecate@1.0.2: {}
 
   uuid@8.3.2: {}
+
+  vite-bundle-analyzer@0.17.0: {}
 
   vite@6.1.0(@types/node@22.13.4)(sugarss@4.0.1(postcss@8.5.2)):
     dependencies:
